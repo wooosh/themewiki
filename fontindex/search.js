@@ -9,6 +9,9 @@
   TODO: add ligature radio buttons
   TODO: serif feature
   TODO: nerd fonts feature
+  TODO: await promise
+  TODO: loading bar
+  TODO: cyrillic feature
 
   TODO: fonts
   - SF family
@@ -19,6 +22,11 @@
   - victor mono
   - sarasa mono
   - cascadia code
+  - turquoise-hexagon's cherry
+  - Source Sans Pro
+  - Go regular
+  - rissoli and pretzel
+  - https://b612-font.com/
 */
 
 // features should appear in this order in the font array
