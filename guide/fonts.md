@@ -1,28 +1,30 @@
 # fonts
 - TODO: how to solve boxes
 - TODO: generate font specimens
-- TODO: maybe separate page for font previews?
 - TODO: fill out all sections
+- TODO: make font index separate, and have previews for fonts that are licensed appropriately
 ## how to install fonts
 
 ## making your own fonts
 
 ## glossary
-- serif
-- sans/sans serif
-- monospace/proportional
-- vector fonts
-- bitmap
+### serif/sans-serif
+
+Serif fonts have fancy endings to their lines and varying line weight, while sans-serif fonts do not.
+
+![sans-serif vs serif comparison](fonts_serif_vs_sans.png)
+
+### monospace/proportional
+### vector/bitmap
+#### bitmap
   - scaling issues
   - kitty
   - vector variants (like in cozette)
-- display
-- icon font
-- weight
-- condensed
-- ascent, descent, baseline
-- CJK and emoji fonts (or "why do I only see boxes")
-- ligatures
+### display fonts
+### condensed
+- CJK, icon, and emoji fonts (or "why do I only see boxes")
+### ligatures
+### font metrics (weight, ascent, descent, baseline)
 
 ## font index
 This is used to keep track of high quality fonts and font collections.
