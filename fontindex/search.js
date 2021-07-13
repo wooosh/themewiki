@@ -1,10 +1,24 @@
 /*
   TODO: customizable sample text
   TODO: font size slider with snapping for bitmap fonts
-  TODO: show bold
+  TODO: show bold + italics
   TODO: font list in separate file
   TODO: add links to homepages
   TODO: images for prohibitively licensed fonts
+  TODO: add feature for open licensed fonts and permissive fonts
+  TODO: add ligature radio buttons
+  TODO: serif feature
+  TODO: nerd fonts feature
+
+  TODO: fonts
+  - SF family
+  - droid sans
+  - terminus
+  - spleen
+  - iosevka
+  - victor mono
+  - sarasa mono
+  - cascadia code
 */
 
 // features should appear in this order in the font array

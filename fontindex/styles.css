@@ -11,6 +11,14 @@ body {
   overflow-y: scroll;
 }
 
+#repolink {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+  font-weight: 700;
+  color: blue;
+}
+
 #form div {
   padding: 0.2em;
 }
