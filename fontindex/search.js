@@ -7,15 +7,23 @@ const feature_types = ['monospace', 'bitmap', 'cjk', 'bold', 'italic', 'icons'];
 
 const fonts = [
   {
-    name: 'cozette',
+    name: 'Cozette',
+    fontface: new FontFace('Cozette', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'icons']
   },
-  {
-    name: 'terminus',
+  /*{
+    name: 'Terminus',
+    fontface: new FontFace('Terminus', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'bold']
+  },*/
+  {
+    name: 'Go Mono',
+    fontface: new FontFace('Go Mono', 'url(fonts/Go-Mono.ttf)'),
+    features: ['monospace', 'bold', 'italic']
   },
   {
-    name: 'go mono',
+    name: 'IBM Plex Mono',
+    fontface: new FontFace('IBM Plex Mono', 'url(fonts/IBMPlexMono-Regular.ttf)'),
     features: ['monospace', 'bold', 'italic']
   }
 ]
@@ -30,7 +38,7 @@ function update() {
 
   display_results(fonts.filter(
     font => {
-      if (!font.name.includes(query)) return false;
+      if (!font.name.toLowerCase().includes(query.toLowerCase())) return false;
       for (const feat in formdata) {
         switch (formdata[feat]) {
           case "exclude":
@@ -57,9 +65,7 @@ function display_results(results) {
         <div class="badges">
           ${font.features.map(feat => `<span>${feat}</span>`).join("\n")}
         </div>
-        <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="specimen" style="font-family: '${font.name}'; font-size: 18pt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>`
   }
 
@@ -67,6 +73,10 @@ function display_results(results) {
 }
 
 window.addEventListener('load', () => {
+  // TODO: loading spinner while downloading fonts
+  // TODO: handle promise
+  fonts.forEach(font => font.fontface.load().then(face => document.fonts.add(face)));
+
   document.querySelectorAll('input[type=radio]').forEach(elem => elem.addEventListener('change', update));
   document.querySelector('#search').addEventListener('input', update);
   update();
