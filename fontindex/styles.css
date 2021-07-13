@@ -1,0 +1,55 @@
+* {
+  font-family: sans-serif;
+  color: #222;
+}
+
+body {
+  max-width: 700px;
+  margin: auto;
+}
+
+#form div {
+  padding: 0.2em;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 0.75em;
+  border: 2px solid #eee;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.radiogroup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.radiogroup span {
+  margin-right: auto;
+}
+.radiogroup label {
+  padding: 0 0.25em 0 0.25em;
+}
+
+.specimen, .specimenbold, .specimenitalic {
+  font-family: serif;
+  font-size: 1.75em;
+}
+
+.specimenbold {
+  font-weight: 700;
+}
+
+.specimenitalic {
+  font-style: italic;
+}
+
+.badges span {
+  background-color: #eee;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  border-radius: 0.25em;
+}

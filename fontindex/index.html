@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Font Index</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="search.js"></script>
+</head>
+<body>
+  <div id="form">
+    <div>
+      <input type="text" placeholder="Font name...">
+    </div>
+    
+    <div class="radiogroup">
+      <span>Monospace</span>
+      <input type="radio" name="monospace" value="exclude">
+      <label for="exclude">exclude</label>
+      <input type="radio" name="monospace" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="monospace" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <div class="radiogroup">
+      <span>Bitmaps</span>
+      <input type="radio" name="bitmap" value="exclude">
+      <label for="exclude">exclude</label>
+      <input type="radio" name="bitmap" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="bitmap" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <div class="radiogroup">
+      <span>CJK Support</span>
+      <input type="radio" name="cjk" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="cjk" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <div class="radiogroup">
+      <span>Bold Variant</span>
+      <input type="radio" name="bold" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="bold" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <div class="radiogroup">
+      <span>Italic Variant</span>
+      <input type="radio" name="italic" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="italic" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <div class="radiogroup">
+      <!-- TODO: more fine grained icon support for powerline stuff, also take into account nerd fonts -->
+      <span>Icon Support</span>
+      <input type="radio" name="icons" value="include" checked>
+      <label for="include">include</label>
+      <input type="radio" name="italic" value="required">
+      <label for="required">required</label>
+    </div>
+    
+    <!-- TODO: bitmap allowed size -->
+    <!-- TODO: preview size -->
+  </div>
+
+  <hr>
+  <div id="results">
+    <div class="result">
+      <h2>Example Font</h2>
+      <div class="badges">
+        <span>Supports CJK</span>
+        <span>Monospaced</span>
+        <span>Has icons</span>
+        <span>Vector</span>
+      </div>
+      <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="result">
+      <h2>Example Font</h2>
+      <div class="badges">
+        <span>Supports CJK</span>
+        <span>Monospaced</span>
+        <span>Has icons</span>
+        <span>Vector</span>
+      </div>
+      <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="result">
+      <h2>Example Font</h2>
+      <div class="badges">
+        <span>Supports CJK</span>
+        <span>Monospaced</span>
+        <span>Has icons</span>
+        <span>Vector</span>
+      </div>
+      <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="result">
+      <h2>Example Font</h2>
+      <div class="badges">
+        <span>Supports CJK</span>
+        <span>Monospaced</span>
+        <span>Has icons</span>
+        <span>Vector</span>
+      </div>
+      <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="result">
+      <h2>Example Font</h2>
+      <div class="badges">
+        <span>Supports CJK</span>
+        <span>Monospaced</span>
+        <span>Has icons</span>
+        <span>Vector</span>
+      </div>
+      <p class="specimen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenbold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="specimenitalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</body>
+</html>

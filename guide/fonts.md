@@ -2,7 +2,7 @@
 - TODO: how to solve boxes
 - TODO: generate font specimens
 - TODO: fill out all sections
-- TODO: make font index separate, and have previews for fonts that are licensed appropriately
+- TODO: make font index separate, and have previews for fonts that are licensed appropriately, have tags (has emoji/icons/CJK, is bitmap/has sizes)
 ## how to install fonts
 
 ## making your own fonts
@@ -22,7 +22,7 @@ Serif fonts have fancy endings to their lines and varying line weight, while san
   - vector variants (like in cozette)
 ### display fonts
 ### condensed
-- CJK, icon, and emoji fonts (or "why do I only see boxes")
+### CJK, icon, and emoji fonts (or "why do I only see boxes")
 ### ligatures
 ### font metrics (weight, ascent, descent, baseline)
 
@@ -40,6 +40,7 @@ This is used to keep track of high quality fonts and font collections.
 - Victor Mono
 - Go Mono
 - Sarasa Mono
+- azukifont
 #### bitmap
 - [Cozette](https://github.com/slavfox/Cozette)
   - 6x13px
@@ -56,6 +57,8 @@ This is used to keep track of high quality fonts and font collections.
 
 ### proportional
 - Sarasa
+#### collections
+- [Google Fonts](https://fonts.google.com/)
 ### icon fonts
 - [Cozette](https://github.com/slavfox/Cozette)
   - 6x13px bitmap font
