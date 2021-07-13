@@ -1,17 +1,25 @@
 /*
-  TODO: onclick live edit or button to enable live editing
+  TODO: customizable sample text
+  TODO: font size slider with snapping for bitmap fonts
+  TODO: show bold
+  TODO: font list in separate file
+  TODO: add links to homepages
+  TODO: images for prohibitively licensed fonts
 */
 
 // features should appear in this order in the font array
 const feature_types = ['monospace', 'bitmap', 'cjk', 'bold', 'italic', 'icons'];
 
 const fonts = [
+  // TODO: group by monospace/bitmap then sort alphabetically in this file to make it easier to manage
   {
     name: 'Cozette',
+    scaling: '9pt',
     fontface: new FontFace('Cozette', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'icons']
   },
   /*{
+    // TODO: show all sizes of terminus font
     name: 'Terminus',
     fontface: new FontFace('Terminus', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'bold']
@@ -25,6 +33,36 @@ const fonts = [
     name: 'IBM Plex Mono',
     fontface: new FontFace('IBM Plex Mono', 'url(fonts/IBMPlexMono-Regular.ttf)'),
     features: ['monospace', 'bold', 'italic']
+  },
+  {
+    name: 'Fira Code',
+    fontface: new FontFace('Fira Code', 'url(fonts/FiraCode-Regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
+  {
+    name: 'JetBrains Mono',
+    fontface: new FontFace('JetBrains Mono', 'url(fonts/JetBrainsMono-Regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
+  {
+    // TODO: mushchlo patched azukifont
+    name: 'AzukiFont Mono',
+    url: 'http://azukifont.com/font/azuki.html',
+    fontface: new FontFace('AzukiFont Mono', 'url(fonts/azukimono.ttf)'),
+    features: ['monospace', 'bold', 'italic', 'cjk']
+  },
+  {
+    name: 'AzukiFont',
+    url: 'http://azukifont.com/font/azuki.html',
+    fontface: new FontFace('AzukiFont', 'url(fonts/azuki.ttf)'),
+    features: ['bold', 'italic', 'cjk']
+  },
+  {
+    name: 'QuailFont',
+    notes: 'also known as uzurafont',
+    url: 'http://azukifont.com/font/uzura.html',
+    fontface: new FontFace('QuailFont', 'url(fonts/quail.ttf)'),
+    features: ['monospace', 'bold', 'italic', 'cjk']
   }
 ]
 
