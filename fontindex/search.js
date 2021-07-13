@@ -22,13 +22,15 @@ const fonts = [
 
 function update() {
   let formdata = {};
-  
+  let query = document.querySelector('#search').value; 
+
   for (const field of feature_types) {
     formdata[field] = document.querySelector(`input[name="${field}"]:checked`).value;
   }
 
   display_results(fonts.filter(
     font => {
+      if (!font.name.includes(query)) return false;
       for (const feat in formdata) {
         switch (formdata[feat]) {
           case "exclude":
@@ -66,5 +68,6 @@ function display_results(results) {
 
 window.addEventListener('load', () => {
   document.querySelectorAll('input[type=radio]').forEach(elem => elem.addEventListener('change', update));
+  document.querySelector('#search').addEventListener('input', update);
   update();
 });
