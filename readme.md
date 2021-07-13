@@ -3,7 +3,8 @@
 this wiki (will) include a guide on how to get started with theming linux, as well as have guides for other software.
 
 # index
-- todo
+## guide
+- [Fonts](guide/fonts.md)
 
 # todo
 ## guide
@@ -17,6 +18,8 @@ this wiki (will) include a guide on how to get started with theming linux, as we
 - display managers/xinitrc/sx
 - bars (lemonbar, polybar, tint2)
 - common pitfalls (transparency, conky, neofetch)
+- browser theming
+- how to design a colorscheme
 - glossary
 - resources page (wallpapers, good wikis, etc)
 ## software
