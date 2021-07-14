@@ -18,7 +18,6 @@
   - droid sans
   - terminus
   - spleen
-  - iosevka
   - victor mono
   - sarasa mono
   - cascadia code
@@ -27,6 +26,7 @@
   - Go regular
   - rissoli and pretzel
   - https://b612-font.com/
+  - https://github.com/lucy/tewi-font
 */
 
 // features should appear in this order in the font array
@@ -66,6 +66,8 @@ const fonts = [
     fontface: new FontFace('JetBrains Mono', 'url(fonts/JetBrainsMono-Regular.woff2)'),
     features: ['monospace', 'bold', 'italic', 'ligatures']
   },
+
+  // azukifont.com
   {
     // TODO: mushchlo patched azukifont
     name: 'AzukiFont Mono',
@@ -85,7 +87,29 @@ const fonts = [
     url: 'http://azukifont.com/font/uzura.html',
     fontface: new FontFace('QuailFont', 'url(fonts/quail.ttf)'),
     features: ['monospace', 'bold', 'italic', 'cjk']
-  }
+  },
+
+  // iosevka family
+  {
+    name: 'Iosevka',
+    fontface: new FontFace('Iosevka', 'url(fonts/iosevka/regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
+  {
+    name: 'Iosevka Slab',
+    fontface: new FontFace('Iosevka Slab', 'url(fonts/iosevka/slab-regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
+  {
+    name: 'Iosevka Curly',
+    fontface: new FontFace('Iosevka Curly', 'url(fonts/iosevka/curly-regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
+  {
+    name: 'Iosevka Curly Slab',
+    fontface: new FontFace('Iosevka Curly Slab', 'url(fonts/iosevka/curly-slab-regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
 ]
 
 function update() {
