@@ -23,7 +23,6 @@
   - cascadia code
   - turquoise-hexagon's cherry
   - Source Sans Pro
-  - Go regular
   - rissoli and pretzel
   - https://b612-font.com/
   - https://github.com/lucy/tewi-font
@@ -46,10 +45,22 @@ const fonts = [
     fontface: new FontFace('Terminus', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'bold']
   },*/
+  
+  // Go fonts
+  {
+    name: 'Go',
+    fontface: new FontFace('Go', 'url(fonts/go/Go-Regular.ttf)'),
+    features: ['bold', 'italic']
+  },
   {
     name: 'Go Mono',
-    fontface: new FontFace('Go Mono', 'url(fonts/Go-Mono.ttf)'),
+    fontface: new FontFace('Go Mono', 'url(fonts/go/Go-Mono.ttf)'),
     features: ['monospace', 'bold', 'italic']
+  },
+  {
+    name: 'Go Smallcaps',
+    fontface: new FontFace('Go Smallcaps', 'url(fonts/go/Go-Smallcaps.ttf)'),
+    features: ['italic']
   },
   {
     name: 'IBM Plex Mono',
