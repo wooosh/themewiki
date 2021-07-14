@@ -18,7 +18,6 @@
   - droid sans
   - terminus
   - spleen
-  - victor mono
   - sarasa mono
   - cascadia code
   - turquoise-hexagon's cherry
@@ -45,6 +44,12 @@ const fonts = [
     fontface: new FontFace('Terminus', 'url(fonts/CozetteVector.ttf)'),
     features: ['monospace', 'bitmap', 'bold']
   },*/
+  {
+    name: 'Victor Mono',
+    url: 'https://rubjo.github.io/victor-mono/',
+    fontface: new FontFace('Victor Mono', 'url(fonts/VictorMono-Regular.woff2)'),
+    features: ['monospace', 'bold', 'italic', 'ligatures']
+  },
   
   // Go fonts
   {
@@ -62,6 +67,7 @@ const fonts = [
     fontface: new FontFace('Go Smallcaps', 'url(fonts/go/Go-Smallcaps.ttf)'),
     features: ['italic']
   },
+
   {
     name: 'IBM Plex Mono',
     fontface: new FontFace('IBM Plex Mono', 'url(fonts/IBMPlexMono-Regular.ttf)'),
