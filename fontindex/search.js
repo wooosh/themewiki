@@ -106,6 +106,14 @@ const fonts = [
     features: ['monospace', 'bold', 'italic', 'cjk']
   },
 
+  // fonts linked to by azukifont
+  {
+    name: 'Aqua',
+    url: 'https://web.archive.org/web/20070202094850/http://aquablue.milkcafe.to/',
+    fontface: new FontFace('Aqua', 'url(fonts/aquafont.ttf)'),
+    features: ['bold', 'italic', 'cjk']
+  },
+
   // iosevka family
   {
     name: 'Iosevka',
